@@ -45,7 +45,7 @@ function Advertisement({ ad, variant = 'sidebar' }) {
           bottom: 20,
           right: 20,
           zIndex: 1000,
-          display: { xs: 'none', md: 'block' } // Hide on mobile
+          // display: { xs: 'none', md: 'block' } // Hide on mobile
         };
       default:
         return {
@@ -118,5 +118,6 @@ Advertisement.propTypes = {
   }),
   variant: PropTypes.oneOf(['banner', 'sidebar', 'popup', 'footer'])
 };
+
 
 export default Advertisement;
