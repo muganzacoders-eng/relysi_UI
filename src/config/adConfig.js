@@ -3,7 +3,7 @@
 
 const adConfig = {
   // Enable/disable ads globally
-  enabled: true,
+  enabled: false,
 
   // Maximum number of ads per position
 //   maxAdsPerPosition: {
@@ -71,6 +71,7 @@ const adConfig = {
 };
 
 export default adConfig;
+
 
 
 
