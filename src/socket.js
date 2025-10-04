@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 let socket;
 
 export const connectSocket = (token) => {
-  socket = io(process.env.REACT_APP_API_URL || 'http://localhost:5000', {
+  socket = io(process.env.REACT_APP_API_URL || 'https://relysi-baas.onrender.com', {
     auth: { token },
   });
 
@@ -24,4 +24,5 @@ export const disconnectSocket = () => {
   if (socket) {
     socket.disconnect();
   }
+
 };
